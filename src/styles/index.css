@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.gradient-text {
+  background: linear-gradient(120deg, #4f46e5, #22d3ee);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero-glow {
+  background:
+    radial-gradient(circle at top left, rgba(99, 102, 241, 0.25), transparent 45%),
+    radial-gradient(circle at 20% 20%, rgba(34, 211, 238, 0.15), transparent 40%);
+}
+
+.glass-card {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(24px);
+}
+
+.section-grid {
+  background-image: radial-gradient(circle at 1px 1px, rgba(148, 163, 184, 0.2) 1px, transparent 0);
+  background-size: 32px 32px;
+}
+
+::selection {
+  background-color: rgba(79, 70, 229, 0.35);
+}

@@ -1,0 +1,26 @@
+{
+  "core": [
+    "Python (Django, Celery)",
+    "REST APIs y sistemas distribuidos",
+    "Microservicios y arquitectura backend",
+    "Docker, Kubernetes, cloud interno",
+    "SQL (MySQL/PostgreSQL), MongoDB"
+  ],
+  "productData": [
+    "Diseño de eventos y métricas de funnel",
+    "Experimentación (A/B testing, cohorts)",
+    "Observabilidad (Kibana) y SLIs/SLOs",
+    "Seguridad aplicada y criptografía"
+  ],
+  "engineering": [
+    "Java (Spring Boot), testing (JUnit), Maven",
+    "Swagger/OpenAPI, SOAP",
+    "Git, code reviews, documentación",
+    "Linux server management, C/C++/C#"
+  ],
+  "ai": [
+    "Workflow AI-augmented con ChatGPT/Codex",
+    "Orquestación de pipelines asíncronos",
+    "Integración IA en features de producto"
+  ]
+}

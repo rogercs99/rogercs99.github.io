@@ -1,0 +1,28 @@
+[
+  {
+    "role": "Team Lead",
+    "company": "NTT Data",
+    "period": "Jul 2025 – Presente",
+    "location": "Barcelona",
+    "stack": ["Django", "Celery", "MySQL"],
+    "highlights": [
+      "Lidero un equipo Python para inventario y consolidación de URLs bancarias multi-entorno.",
+      "Centralización y trazabilidad del estado de URLs para equipos internos con reportes accionables.",
+      "Coordinación de controles de seguridad (WAF, pentesting, assessments) y cumplimiento interno.",
+      "Mentoring, distribución de trabajo, estándares de calidad y delivery continuo."
+    ]
+  },
+  {
+    "role": "Software Architect",
+    "company": "NTT Data",
+    "period": "Mar 2022 – Presente",
+    "location": "Barcelona",
+    "stack": ["Django", "Docker", "Kubernetes", "Criptografía", "Microservicios"],
+    "highlights": [
+      "Diseño de servicios criptográficos (encriptación, desencriptación, MAC, firmas digitales).",
+      "Arquitectura y migración de microservicios a cloud interno con Docker + Kubernetes custom.",
+      "Backend para análisis de transacciones bancarias orientado a detección de fraude.",
+      "Automatización de creación de certificados digitales con conexión segura a entorno protegido."
+    ]
+  }
+]

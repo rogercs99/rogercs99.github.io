@@ -1,0 +1,18 @@
+[
+  {
+    "slug": "play2",
+    "title": "Play2",
+    "subtitle": "Plataforma social para quedadas deportivas en tiempo real",
+    "summary": "Mapa interactivo + comunidad + chat realtime para activar engagement y retención.",
+    "tags": ["React", "Fastify", "PostgreSQL", "WebSocket", "Product B2C"],
+    "cta": "Ver case study"
+  },
+  {
+    "slug": "gamemodai",
+    "title": "GameModAI",
+    "subtitle": "Pipeline IA para upscaling de assets con orquestación asíncrona",
+    "summary": "FastAPI + Celery + Kaggle GPU para automatizar resultados en ZIP con UX de progreso.",
+    "tags": ["FastAPI", "Celery", "Docker", "Kaggle", "IA aplicada"],
+    "cta": "Ver case study"
+  }
+]
