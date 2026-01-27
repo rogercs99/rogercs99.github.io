@@ -1,0 +1,26 @@
+{
+  "name": "Roger Campos Sans",
+  "headline": "Software Architect / Team Lead (Backend & Product Engineering)",
+  "location": "Barcelona, España",
+  "email": "rogercampos18@gmail.com",
+  "phone": "+34 648 202 635",
+  "linkedin": "https://www.linkedin.com/in/rogercs99",
+  "summary": "Soy ingeniero y arquitecto de software con foco en backend, arquitectura y entrega de producto en entornos complejos (banca/seguridad). Lidero equipos, diseño APIs y sistemas distribuidos, y convierto requisitos de negocio en soluciones robustas. Me muevo cómodo entre arquitectura, desarrollo y ejecución: estándares de calidad, observabilidad, seguridad, despliegue en contenedores y colaboración con stakeholders.",
+  "quickFacts": [
+    "+6 años construyendo backends críticos y productos B2C",
+    "Python, Django, FastAPI, Fastify, Java",
+    "Arquitectura distribuida + seguridad + observabilidad",
+    "Barcelona / híbrido / disponibilidad para viajar"
+  ],
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/rogercs99",
+    "github": "TODO",
+    "email": "rogercampos18@gmail.com"
+  },
+  "downloadCv": "TODO",
+  "languages": [
+    "Español (nativo)",
+    "Catalán (nativo)",
+    "Inglés (profesional)"
+  ]
+}
