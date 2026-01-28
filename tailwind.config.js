@@ -4,7 +4,18 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Helvetica Neue"', 'Arial', 'system-ui', 'sans-serif'],
+        sans: [
+          '-apple-system',
+          'BlinkMacSystemFont',
+          '"SF Pro Text"',
+          '"SF Pro Display"',
+          '"Helvetica Neue"',
+          'Helvetica',
+          'Arial',
+          '"Segoe UI"',
+          'system-ui',
+          'sans-serif'
+        ],
         mono: ['"Courier New"', 'Courier', 'monospace']
       },
       colors: {
