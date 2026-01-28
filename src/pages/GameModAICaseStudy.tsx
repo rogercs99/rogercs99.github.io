@@ -1,111 +1,118 @@
-import { Container } from '../components/Container';
+import { Link } from 'react-router-dom';
+import { loadAllContent } from '../hooks/useEditableContent';
 import { ProjectCaseStudy } from '../components/ProjectCaseStudy';
 import { Badge } from '../components/Badge';
-import { LinkButton } from '../components/Button';
+import { Card } from '../components/Card';
+import { Nav } from '../components/Nav';
+import { Footer } from '../components/Footer';
+import { ScrollReveal } from '../components/ScrollReveal';
+
+function SectionBlock({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <section className="space-y-3">
+      <h2 className="text-[18px] font-bold text-white">{title}</h2>
+      {children}
+    </section>
+  );
+}
 
 export default function GameModAICaseStudy() {
+  const { caseStudies, site } = loadAllContent();
+  const study = caseStudies.gamemodai;
+  const overviewBlocks = Array.isArray(study.overview) ? study.overview : [study.overview];
+
   return (
-    <Container>
-      <ProjectCaseStudy
-        title="GameModAI"
-        subtitle="Plataforma para mejorar assets de videojuegos con IA y pipeline asíncrono."
-        summary="De subida a descarga en minutos: FastAPI + Celery + Kaggle GPU con UX de progreso, RGPD y paneles de admin."
-        tags={["FastAPI", "Celery", "Redis", "Docker", "Kaggle", "React"]}
-      >
-        <div className="space-y-8 text-sm text-slate-600 dark:text-slate-200">
-          <section className="space-y-3">
-            <h2 className="text-lg font-semibold text-slate-900 dark:text-white">Problema</h2>
-            <p>
-              Mejorar assets de videojuegos con IA suele ser un proceso manual, costoso y difícil de escalar. Faltaba
-              una experiencia web simple que orquestara subida, procesamiento y entrega en un pipeline GPU.
-            </p>
-          </section>
+    <div className="bg-ink-900 text-white min-h-screen">
+      <Nav />
+      <main className="wrap pb-20 pt-24 md:pt-32">
+        <ScrollReveal>
+          <img
+            src={study.heroImage}
+            alt={study.title}
+            className="w-full max-h-[420px] rounded-[24px] border border-white/10 bg-[#121212] p-6 object-contain"
+            loading="lazy"
+          />
+        </ScrollReveal>
+        <div className="mt-10">
+          <ScrollReveal>
+            <ProjectCaseStudy
+              title={study.title}
+              subtitle={study.subtitle}
+              summary={study.summary}
+              status={study.status}
+              tags={study.tags}
+            >
+              <div className="space-y-8 text-sm text-ink-300">
+              <SectionBlock title="Contexto">
+                <div className="space-y-3">
+                  {overviewBlocks.map((paragraph: string) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
+                </div>
+              </SectionBlock>
 
-          <section className="space-y-3">
-            <h2 className="text-lg font-semibold text-slate-900 dark:text-white">Solución</h2>
-            <ul className="space-y-2">
-              <li>Frontend con tool de upscale y estados claros de progreso.</li>
-              <li>Backend FastAPI con auth JWT y gestión de jobs.</li>
-              <li>Celery + Redis para orquestar tareas y escalado asíncrono.</li>
-              <li>Pipeline GPU en Kaggle con descarga automática del ZIP final.</li>
-              <li>RGPD: consentimiento de cookies y tracking responsable.</li>
-            </ul>
-          </section>
+                <SectionBlock title="Rol y alcance">
+                  <p>{study.role}</p>
+                  <p className="text-white/70">{study.scope}</p>
+                </SectionBlock>
 
-          <section className="space-y-3">
-            <h2 className="text-lg font-semibold text-slate-900 dark:text-white">Arquitectura Docker</h2>
-            <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 font-mono text-xs text-slate-600 dark:border-slate-800 dark:bg-slate-900/60 dark:text-slate-200">
-              <pre className="whitespace-pre-wrap">{`graph TD
-  UI[React + Tailwind] --> API[FastAPI]
-  API --> DB[(Postgres)]
-  API --> REDIS[(Redis)]
-  REDIS --> WORKER[Celery Worker]
-  WORKER --> GPU[Kaggle GPU Kernel]
-  GPU --> ZIP[ZIP Result]
-  API --> UI`}</pre>
-            </div>
-          </section>
+                <SectionBlock title="Qué incluye">
+                  <ul className="space-y-2">
+                    {study.highlights.map((item: string) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-1 h-2 w-2 rounded-full bg-ink-200" aria-hidden />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </SectionBlock>
 
-          <section className="space-y-3">
-            <h2 className="text-lg font-semibold text-slate-900 dark:text-white">Stack</h2>
-            <div className="flex flex-wrap gap-2">
-              {[
-                'FastAPI + Celery',
-                'Redis + Postgres',
-                'Docker Compose',
-                'React + Tailwind',
-                'JWT + Admin panel',
-                'Consentimiento RGPD'
-              ].map((item) => (
-                <Badge key={item}>{item}</Badge>
-              ))}
-            </div>
-          </section>
+                <SectionBlock title="Skills que se ven">
+                  <ul className="space-y-2">
+                    {study.skillsShown.map((item: string) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-1 h-2 w-2 rounded-full bg-ink-200" aria-hidden />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </SectionBlock>
 
-          <section className="space-y-3">
-            <h2 className="text-lg font-semibold text-slate-900 dark:text-white">Decisiones clave</h2>
-            <ul className="space-y-2">
-              <li>Jobs asíncronos para escalar sin bloquear el UX.</li>
-              <li>Separación de servicios con Docker para despliegue reproducible.</li>
-              <li>UX de progreso + descarga final para minimizar incertidumbre.</li>
-              <li>Consentimiento RGPD para eventos y tracking responsable.</li>
-            </ul>
-          </section>
+                <SectionBlock title="Tecnología (alto nivel)">
+                  <div className="flex flex-wrap gap-2">
+                    {study.stack.map((item: string) => (
+                      <Badge key={item}>{item}</Badge>
+                    ))}
+                  </div>
+                </SectionBlock>
 
-          <section className="space-y-3">
-            <h2 className="text-lg font-semibold text-slate-900 dark:text-white">Resultados (potenciales)</h2>
-            <ul className="space-y-2">
-              <li>Pipeline automatizado que reduce horas de trabajo manual.</li>
-              <li>Escalado GPU on-demand con costes controlados.</li>
-              <li>Experiencia consistente desde marketing hasta herramienta de upscale.</li>
-            </ul>
-          </section>
+                <SectionBlock title="Impacto esperado">
+                  <ul className="space-y-2">
+                    {study.impact.map((item: string) => (
+                      <li key={item} className="flex gap-2">
+                        <span className="mt-1 h-2 w-2 rounded-full bg-ink-200" aria-hidden />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </SectionBlock>
 
-          <section className="space-y-3">
-            <h2 className="text-lg font-semibold text-slate-900 dark:text-white">Consideraciones de producto</h2>
-            <ul className="space-y-2">
-              <li>Latencia percibida: estados claros y estimaciones de progreso.</li>
-              <li>Coste por job: guardrails para limitar tamaño y frecuencia.</li>
-              <li>UX: onboarding rápido, resultados visibles y panel de historial.</li>
-              <li>Seguridad: aislamiento de jobs, expiración de assets y tokens JWT.</li>
-            </ul>
-          </section>
-
-          <section className="space-y-3">
-            <h2 className="text-lg font-semibold text-slate-900 dark:text-white">Próximos pasos</h2>
-            <ul className="space-y-2">
-              <li>Optimizar colas por prioridad (beta vs. premium).</li>
-              <li>Feature de comparación antes/después en frontend.</li>
-              <li>Observabilidad con métricas de coste, latencia y conversión.</li>
-            </ul>
-          </section>
-
-          <div className="flex flex-wrap gap-3">
-            <LinkButton href="/projects" variant="secondary">Volver a proyectos</LinkButton>
-            <LinkButton href="/#contacto" variant="primary">Contactar</LinkButton>
-          </div>
+                <Card>
+                  <h3 className="text-[16px] font-bold text-white">CTA rápido</h3>
+                  <p className="mt-2 text-ink-300">
+                    Si quieres profundizar en arquitectura o decisiones de producto, hablemos.
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-3">
+                    <Link className="btn-shadow-soft" to="/projects">VOLVER A PROYECTOS</Link>
+                    <a className="btn-shadow-hot" href={`mailto:${site.email}`}>CONTACTAR</a>
+                  </div>
+                </Card>
+              </div>
+            </ProjectCaseStudy>
+          </ScrollReveal>
         </div>
-      </ProjectCaseStudy>
-    </Container>
+      </main>
+      <Footer />
+    </div>
   );
 }

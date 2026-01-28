@@ -2,36 +2,183 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  color-scheme: light dark;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid #facdcd;
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background-color: rgba(250, 205, 205, 0.6);
+    color: #1a1a1a;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+    background: none;
+  }
+
+  ::-webkit-scrollbar-track {
+    border: 0.5px solid #141414;
+    background: #161616;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff;
+  }
 }
 
-body {
-  font-family: 'Inter', system-ui, sans-serif;
+@layer components {
+  .wrap {
+    @apply mx-auto w-[93%] max-w-[1280px];
+  }
+
+  .text-stroke-pink {
+    -webkit-text-stroke: 1px #facdcd;
+    color: transparent;
+  }
+
+  .btn-shadow-hot {
+    @apply inline-block bg-white text-black font-bold text-[11px] tracking-[0.4em] px-[60px] py-[20px] rounded-[10px];
+    box-shadow: 8px 8px 0 rgba(250, 71, 119, 1);
+  }
+
+  .btn-shadow-soft {
+    @apply inline-block bg-white text-black font-bold text-[11px] tracking-[0.4em] px-[50px] py-[20px] rounded-[10px];
+    box-shadow: 8px 8px 0 rgba(250, 205, 205, 1);
+  }
+
+  .card-dark {
+    background: #2e2e2e;
+    border-radius: 36px;
+    padding: 15px;
+    border: 2px solid rgba(250, 205, 205, 0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+
+  .card-dark:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    border-color: rgba(250, 205, 205, 1);
+  }
+
+  .card-light {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 18px;
+    border: 1px solid #1a1a1a;
+    box-shadow: 6px 6px 0 rgba(26, 26, 26, 0.1);
+  }
+
+  .scroller {
+    animation: scroll 5.2s ease-in-out infinite;
+  }
+
+  .ring-wrap {
+    position: absolute;
+    bottom: -50px;
+    left: 60%;
+    width: 14%;
+    height: auto;
+  }
+
+  .ring-spin {
+    animation: rotating 8s linear infinite;
+  }
+
+  .portfolio-cta {
+    @apply w-full flex items-center justify-between border-y-2 border-white px-[60px] py-[20px];
+  }
+
+  .portfolio-text {
+    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .portfolio-cta:hover .portfolio-text {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #ffffff;
+  }
 }
 
-.gradient-text {
-  background: linear-gradient(120deg, #4f46e5, #22d3ee);
-  -webkit-background-clip: text;
-  color: transparent;
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(25px);
+    opacity: 0;
+    height: 10px;
+  }
 }
 
-.hero-glow {
-  background:
-    radial-gradient(circle at top left, rgba(99, 102, 241, 0.25), transparent 45%),
-    radial-gradient(circle at 20% 20%, rgba(34, 211, 238, 0.15), transparent 40%);
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
 }
 
-.glass-card {
-  background: rgba(15, 23, 42, 0.6);
-  backdrop-filter: blur(24px);
+@media (max-width: 980px) {
+  .portfolio-text {
+    font-size: 20px;
+  }
 }
 
-.section-grid {
-  background-image: radial-gradient(circle at 1px 1px, rgba(148, 163, 184, 0.2) 1px, transparent 0);
-  background-size: 32px 32px;
+@media (max-width: 767px) {
+  .ring-wrap {
+    bottom: -20px;
+    left: 40%;
+    width: 24%;
+  }
 }
 
-::selection {
-  background-color: rgba(79, 70, 229, 0.35);
+@media (max-width: 479px) {
+  .ring-wrap {
+    left: 55%;
+    width: 30%;
+  }
+}
+
+@media (max-width: 640px) {
+  .btn-shadow-hot,
+  .btn-shadow-soft {
+    padding: 16px 28px;
+    letter-spacing: 0.2em;
+  }
+
+  .portfolio-cta {
+    padding: 16px 20px;
+  }
 }

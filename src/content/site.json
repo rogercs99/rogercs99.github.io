@@ -1,23 +1,20 @@
 {
   "name": "Roger Campos Sans",
-  "headline": "Software Architect / Team Lead (Backend & Product Engineering)",
+  "headline": "Software Architect & Team Lead (Backend)",
+  "targetRole": "Interesado en Lead Engineer – AI & Personalization (Travel Things) · eDreams ODIGEO",
   "location": "Barcelona, España",
   "email": "rogercampos18@gmail.com",
   "phone": "+34 648 202 635",
   "linkedin": "https://www.linkedin.com/in/rogercs99",
-  "summary": "Soy ingeniero y arquitecto de software con foco en backend, arquitectura y entrega de producto en entornos complejos (banca/seguridad). Lidero equipos, diseño APIs y sistemas distribuidos, y convierto requisitos de negocio en soluciones robustas. Me muevo cómodo entre arquitectura, desarrollo y ejecución: estándares de calidad, observabilidad, seguridad, despliegue en contenedores y colaboración con stakeholders.",
+  "github": "",
+  "cvUrl": "",
+  "summary": "Soy ingeniero de software y arquitecto técnico. Me gusta poner orden en sistemas complejos, trabajar cerca del producto y liderar equipos para entregar de forma fiable. Mi fuerte es el backend, la seguridad y la calidad de servicio en entornos exigentes.",
   "quickFacts": [
-    "+6 años construyendo backends críticos y productos B2C",
-    "Python, Django, FastAPI, Fastify, Java",
-    "Arquitectura distribuida + seguridad + observabilidad",
-    "Barcelona / híbrido / disponibilidad para viajar"
+    "Liderando equipos backend desde 2022",
+    "Experiencia en banca y seguridad",
+    "Python/Django y servicios distribuidos",
+    "Despliegues en contenedores con foco en estabilidad"
   ],
-  "social": {
-    "linkedin": "https://www.linkedin.com/in/rogercs99",
-    "github": "TODO",
-    "email": "rogercampos18@gmail.com"
-  },
-  "downloadCv": "TODO",
   "languages": [
     "Español (nativo)",
     "Catalán (nativo)",

@@ -7,9 +7,21 @@ interface SectionProps {
   eyebrow?: string;
   children: ReactNode;
   className?: string;
+  tone?: 'dark' | 'light';
 }
 
-export function Section({ id, title, eyebrow, children, className = '' }: SectionProps) {
+const tones = {
+  dark: {
+    eyebrow: 'text-ink-300',
+    title: 'text-white'
+  },
+  light: {
+    eyebrow: 'text-[#9d9d9d]',
+    title: 'text-black'
+  }
+};
+
+export function Section({ id, title, eyebrow, children, className = '', tone = 'dark' }: SectionProps) {
   return (
     <section id={id} className={`py-16 md:py-24 ${className}`}>
       <motion.div
@@ -19,8 +31,12 @@ export function Section({ id, title, eyebrow, children, className = '' }: Sectio
         viewport={{ once: true, margin: '-100px' }}
       >
         <div className="mb-10">
-          {eyebrow && <p className="text-sm font-semibold uppercase tracking-widest text-indigo-500">{eyebrow}</p>}
-          <h2 className="mt-3 text-3xl font-semibold text-slate-900 dark:text-white md:text-4xl">{title}</h2>
+          {eyebrow && (
+            <p className={`text-[12px] font-semibold uppercase tracking-[0.25em] ${tones[tone].eyebrow}`}>
+              {eyebrow}
+            </p>
+          )}
+          <h2 className={`mt-3 text-[32px] font-bold md:text-[42px] ${tones[tone].title}`}>{title}</h2>
         </div>
         {children}
       </motion.div>

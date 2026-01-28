@@ -3,13 +3,17 @@ import { ReactNode } from 'react';
 interface CardProps {
   children: ReactNode;
   className?: string;
+  variant?: 'dark' | 'light';
 }
 
-export function Card({ children, className = '' }: CardProps) {
+const variants = {
+  dark: 'card-dark text-white',
+  light: 'card-light text-black'
+};
+
+export function Card({ children, className = '', variant = 'dark' }: CardProps) {
   return (
-    <div
-      className={`rounded-2xl border border-slate-200 bg-white/90 p-6 shadow-soft backdrop-blur transition hover:-translate-y-1 hover:shadow-glow dark:border-slate-800 dark:bg-slate-900/80 ${className}`}
-    >
+    <div className={`${variants[variant]} ${className}`}>
       {children}
     </div>
   );

@@ -1,0 +1,21 @@
+<svg width="920" height="560" viewBox="0 0 920 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f0f0f"/>
+      <stop offset="100%" stop-color="#1e1e1e"/>
+    </linearGradient>
+  </defs>
+  <rect width="920" height="560" rx="32" fill="url(#bg)"/>
+  <rect x="28" y="28" width="864" height="504" rx="28" fill="#1c1c1c"/>
+  <rect x="80" y="80" width="360" height="180" rx="22" fill="#242424" stroke="#facdcd" stroke-width="2"/>
+  <rect x="80" y="290" width="360" height="170" rx="22" fill="#202020"/>
+  <rect x="480" y="80" width="360" height="90" rx="18" fill="#252525"/>
+  <rect x="480" y="190" width="360" height="90" rx="18" fill="#252525"/>
+  <rect x="480" y="300" width="360" height="160" rx="18" fill="#1e1e1e"/>
+  <circle cx="160" cy="170" r="36" fill="#fa4777"/>
+  <circle cx="260" cy="210" r="18" fill="#facdcd"/>
+  <text x="82" y="60" fill="#facdcd" font-family="Arial Black, Arial, sans-serif" font-size="16" letter-spacing="4">GAMEMODAI</text>
+  <text x="500" y="115" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" letter-spacing="2">SUBIDA</text>
+  <text x="500" y="225" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" letter-spacing="2">PROCESO</text>
+  <text x="500" y="340" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" letter-spacing="2">RESULTADO</text>
+</svg>

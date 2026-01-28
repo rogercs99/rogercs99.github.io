@@ -1,0 +1,14 @@
+<svg width="720" height="520" viewBox="0 0 720 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="520" rx="32" fill="#141414"/>
+  <rect x="36" y="36" width="648" height="448" rx="28" fill="#1f1f1f" stroke="#facdcd" stroke-width="2"/>
+  <rect x="84" y="90" width="240" height="120" rx="16" fill="#2a2a2a"/>
+  <rect x="84" y="230" width="240" height="200" rx="16" fill="#252525"/>
+  <rect x="352" y="90" width="284" height="60" rx="12" fill="#252525"/>
+  <rect x="352" y="170" width="284" height="60" rx="12" fill="#252525"/>
+  <rect x="352" y="250" width="284" height="120" rx="18" fill="#202020"/>
+  <circle cx="158" cy="150" r="30" fill="#fa4777"/>
+  <circle cx="252" cy="170" r="14" fill="#facdcd"/>
+  <path d="M362 310H600" stroke="#facdcd" stroke-width="6" stroke-linecap="round"/>
+  <path d="M362 334H540" stroke="#facdcd" stroke-width="6" stroke-linecap="round"/>
+  <text x="82" y="70" fill="#facdcd" font-family="Arial Black, Arial, sans-serif" font-size="16" letter-spacing="4">GAMEMODAI</text>
+</svg>

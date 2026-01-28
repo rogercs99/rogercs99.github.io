@@ -1,0 +1,17 @@
+<svg width="960" height="420" viewBox="0 0 960 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="420" rx="28" fill="#1a1a1a"/>
+  <rect x="40" y="60" width="180" height="90" rx="16" fill="#2e2e2e" stroke="#facdcd" stroke-width="2"/>
+  <rect x="270" y="60" width="180" height="90" rx="16" fill="#2e2e2e" stroke="#facdcd" stroke-width="2"/>
+  <rect x="500" y="60" width="180" height="90" rx="16" fill="#2e2e2e" stroke="#facdcd" stroke-width="2"/>
+  <rect x="730" y="60" width="180" height="90" rx="16" fill="#2e2e2e" stroke="#facdcd" stroke-width="2"/>
+  <path d="M220 105H270" stroke="#facdcd" stroke-width="4"/>
+  <path d="M450 105H500" stroke="#facdcd" stroke-width="4"/>
+  <path d="M680 105H730" stroke="#facdcd" stroke-width="4"/>
+  <text x="70" y="110" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="12" letter-spacing="2">CONTEXTO</text>
+  <text x="300" y="110" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="12" letter-spacing="2">REGLAS</text>
+  <text x="535" y="110" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="12" letter-spacing="2">API</text>
+  <text x="760" y="110" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="12" letter-spacing="2">UX</text>
+  <rect x="90" y="210" width="780" height="140" rx="22" fill="#facdcd"/>
+  <text x="120" y="260" fill="#1a1a1a" font-family="Arial Black, Arial, sans-serif" font-size="20" letter-spacing="3">EXPERIENCIA PERSONALIZADA</text>
+  <text x="120" y="300" fill="#1a1a1a" font-family="Arial, sans-serif" font-size="14">Eventos · Feedback · Calidad · Rendimiento · Trazabilidad</text>
+</svg>

@@ -1,0 +1,98 @@
+{
+  "play2": {
+    "title": "Play2",
+    "subtitle": "Proyecto personal en desarrollo para organizar quedadas deportivas.",
+    "summary": "La idea es simple: abrir el mapa, ver qué hay cerca y quedar en minutos. Está en desarrollo.",
+    "status": "En desarrollo",
+    "heroImage": "/assets/play2-cover.svg",
+    "role": "Lideré la parte técnica y la coordinación del trabajo.",
+    "scope": "Mapa como núcleo, perfiles y comunicación en tiempo real.",
+    "tags": ["Producto", "Mapa", "Comunidad", "Tiempo real"],
+    "overview": [
+      "Play2 es un proyecto personal pensado para que organizar planes deportivos sea fácil y rápido.",
+      "El foco está en la experiencia: descubrir eventos cercanos, ver quién participa y coordinarse sin fricción."
+    ],
+    "highlights": [
+      "Mapa con filtros para descubrir eventos sin perder tiempo.",
+      "Perfiles y comunidad para saber con quién quedas.",
+      "Chat y notificaciones para coordinarse sin fricción.",
+      "Panel de administración para gestionar incidencias."
+    ],
+    "skillsShown": [
+      "Diseño de servicios claros y estables",
+      "Arquitectura preparada para crecer",
+      "Producto pensado para usuarios finales",
+      "Coordinación de funciones en tiempo real"
+    ],
+    "stack": ["React", "Tailwind", "Fastify", "PostgreSQL", "WebSocket"],
+    "impact": [
+      "El usuario entiende el producto en segundos.",
+      "Menos pasos para pasar de ver a unirse.",
+      "Mejor coordinación entre personas."
+    ]
+  },
+  "gamemodai": {
+    "title": "GameModAI",
+    "subtitle": "Proyecto personal en desarrollo para mejorar assets de videojuegos.",
+    "summary": "Subes archivos, el sistema los procesa y te devuelve el resultado. Está en desarrollo.",
+    "status": "En desarrollo",
+    "heroImage": "/assets/gamemodai-cover.svg",
+    "role": "Diseñé el flujo completo y la experiencia de usuario.",
+    "scope": "Procesado en segundo plano y seguimiento claro del estado.",
+    "tags": ["Automatización", "Procesado", "Asíncrono", "Producto"],
+    "overview": [
+      "GameModAI automatiza un trabajo que suele ser manual y pesado en proyectos de videojuegos.",
+      "El objetivo es que cualquier persona pueda subir sus assets y recibir mejoras sin complicaciones."
+    ],
+    "highlights": [
+      "Subida simple con feedback del estado.",
+      "Procesado en segundo plano con colas.",
+      "Panel con resultados y descarga final.",
+      "Consentimiento y tracking responsable."
+    ],
+    "skillsShown": [
+      "Diseño de procesos asíncronos",
+      "Backend con colas y trabajos en segundo plano",
+      "Experiencia clara y sin sorpresas",
+      "Control de costes y rendimiento"
+    ],
+    "stack": ["FastAPI", "Celery", "Redis", "Docker", "React"],
+    "impact": [
+      "Menos trabajo manual en pipelines de arte.",
+      "Resultados consistentes sin intervención.",
+      "Usuario informado en todo momento."
+    ]
+  },
+  "deltai": {
+    "title": "DeltAI",
+    "subtitle": "Proyecto personal en desarrollo para convertir requerimientos en backlog.",
+    "summary": "Ayuda a ordenar requisitos y convertirlos en tareas claras. Está en desarrollo.",
+    "status": "En desarrollo",
+    "heroImage": "/assets/deltai-cover.svg",
+    "role": "Definí el producto, la estructura y el flujo de trabajo.",
+    "scope": "De requisitos a tareas accionables con trazabilidad.",
+    "tags": ["MVP", "Producto", "Backlog", "Proceso"],
+    "overview": [
+      "DeltAI reduce la ambigüedad cuando llega un documento de requisitos.",
+      "El objetivo es transformarlo en un backlog claro, ordenado y fácil de seguir."
+    ],
+    "highlights": [
+      "Backlog estructurado desde un documento.",
+      "Preguntas de aclaración cuando faltan datos.",
+      "Exportaciones a herramientas de gestión.",
+      "Historial y trazabilidad de cambios."
+    ],
+    "skillsShown": [
+      "Modelado de procesos de negocio",
+      "Producto orientado a claridad",
+      "Automatización de tareas repetitivas",
+      "Integración con herramientas externas"
+    ],
+    "stack": ["React", "Node", "SQLite"],
+    "impact": [
+      "Se ahorra tiempo en refinamiento.",
+      "Menos malentendidos en el arranque.",
+      "Arranque más rápido de proyectos."
+    ]
+  }
+}

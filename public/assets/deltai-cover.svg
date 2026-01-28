@@ -1,0 +1,18 @@
+<svg width="920" height="560" viewBox="0 0 920 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#141414"/>
+      <stop offset="100%" stop-color="#202020"/>
+    </linearGradient>
+  </defs>
+  <rect width="920" height="560" rx="32" fill="url(#bg)"/>
+  <rect x="28" y="28" width="864" height="504" rx="28" fill="#202020" stroke="#facdcd" stroke-width="2"/>
+  <rect x="80" y="90" width="760" height="110" rx="20" fill="#2b2b2b"/>
+  <rect x="80" y="230" width="420" height="150" rx="22" fill="#2a2a2a"/>
+  <rect x="520" y="230" width="320" height="150" rx="22" fill="#252525"/>
+  <rect x="80" y="410" width="760" height="90" rx="22" fill="#262626"/>
+  <text x="80" y="70" fill="#facdcd" font-family="Arial Black, Arial, sans-serif" font-size="18" letter-spacing="4">DELTAI</text>
+  <text x="100" y="150" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" letter-spacing="2">Requisitos → tareas claras</text>
+  <text x="100" y="275" fill="#d9d9d9" font-family="Arial, sans-serif" font-size="14" letter-spacing="2">Checklist · Prioridad · Export</text>
+  <text x="100" y="455" fill="#facdcd" font-family="Arial, sans-serif" font-size="14" letter-spacing="3">MVP</text>
+</svg>

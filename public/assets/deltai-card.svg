@@ -1,0 +1,9 @@
+<svg width="720" height="520" viewBox="0 0 720 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="520" rx="32" fill="#171717"/>
+  <rect x="36" y="36" width="648" height="448" rx="28" fill="#212121" stroke="#facdcd" stroke-width="2"/>
+  <rect x="80" y="90" width="560" height="70" rx="16" fill="#2f2f2f"/>
+  <rect x="80" y="190" width="360" height="90" rx="18" fill="#2a2a2a"/>
+  <rect x="80" y="310" width="560" height="110" rx="22" fill="#262626"/>
+  <text x="80" y="70" fill="#facdcd" font-family="Arial Black, Arial, sans-serif" font-size="16" letter-spacing="4">DELTAI</text>
+  <text x="100" y="135" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" letter-spacing="2">MVP · Backlog Generator</text>
+</svg>

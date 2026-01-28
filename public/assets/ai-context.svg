@@ -1,0 +1,7 @@
+<svg width="320" height="200" viewBox="0 0 320 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="320" height="200" rx="20" fill="#1a1a1a"/>
+  <circle cx="90" cy="100" r="48" fill="#facdcd"/>
+  <circle cx="160" cy="100" r="48" fill="#fa4777" opacity="0.8"/>
+  <circle cx="230" cy="100" r="48" fill="#ffffff" opacity="0.9"/>
+  <text x="36" y="178" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" letter-spacing="3">CONTEXTO</text>
+</svg>

@@ -1,0 +1,41 @@
+{
+  "personalization": [
+    "Me siento cómodo trabajando con señales de uso y contexto.",
+    "Diseño de APIs que permiten personalizar la experiencia.",
+    "Respeto por privacidad y entornos regulados.",
+    "Rendimiento y estabilidad como base de cualquier personalización."
+  ],
+  "modelToFeature": [
+    "Traducción de necesidades de producto a servicios claros.",
+    "Contratos bien definidos entre frontend y backend.",
+    "Experimentos pequeños para validar cambios.",
+    "Trabajo coordinado con datos, producto y diseño."
+  ],
+  "impactMetrics": [
+    "Adopción y uso de nuevas funcionalidades.",
+    "Calidad y consistencia de eventos.",
+    "Latencia y errores como señales de salud.",
+    "Trazabilidad y cumplimiento cuando hay datos sensibles."
+  ],
+  "leadership": [
+    "Revisiones de código con criterios claros.",
+    "Ownership end-to-end y cultura de calidad.",
+    "Mentoring y crecimiento del equipo.",
+    "Ritmo de entrega sostenible y alineado con producto."
+  ],
+  "whyMe": [
+    "He liderado equipos y he sido responsable de arquitectura y delivery.",
+    "Sé construir y operar sistemas backend en producción con seguridad.",
+    "Trabajo cerca del producto para convertir problemas en soluciones simples.",
+    "Experiencia real con datos sensibles y entornos regulados.",
+    "Play2 muestra experiencia en producto B2C con comunidad y tiempo real.",
+    "GameModAI demuestra automatización y procesos asíncronos.",
+    "Uso herramientas de IA para ser más eficiente sin depender ciegamente."
+  ],
+  "mindset": [
+    "Entender contexto e intención antes de decidir.",
+    "Usar señales y reglas para dar respuestas consistentes.",
+    "Medir impacto con métricas claras y simples.",
+    "Colaborar con producto, datos y UX con ownership claro."
+  ]
+}

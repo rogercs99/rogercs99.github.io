@@ -1,0 +1,11 @@
+<svg width="720" height="520" viewBox="0 0 720 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="520" rx="32" fill="#121821"/>
+  <rect x="36" y="36" width="648" height="448" rx="28" fill="#1a1a1a" stroke="#fa4777" stroke-width="2"/>
+  <rect x="80" y="80" width="250" height="360" rx="24" fill="#0f1c24"/>
+  <rect x="362" y="80" width="278" height="110" rx="18" fill="#202833"/>
+  <rect x="362" y="210" width="278" height="230" rx="18" fill="#1c222b"/>
+  <circle cx="168" cy="190" r="16" fill="#fa4777"/>
+  <circle cx="224" cy="270" r="10" fill="#facdcd"/>
+  <path d="M120 230L200 210L260 280L190 360" stroke="#facdcd" stroke-width="2" fill="none"/>
+  <text x="80" y="70" fill="#facdcd" font-family="Arial Black, Arial, sans-serif" font-size="16" letter-spacing="4">PLAY2</text>
+</svg>

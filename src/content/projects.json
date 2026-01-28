@@ -2,17 +2,41 @@
   {
     "slug": "play2",
     "title": "Play2",
-    "subtitle": "Plataforma social para quedadas deportivas en tiempo real",
-    "summary": "Mapa interactivo + comunidad + chat realtime para activar engagement y retención.",
-    "tags": ["React", "Fastify", "PostgreSQL", "WebSocket", "Product B2C"],
-    "cta": "Ver case study"
+    "subtitle": "Proyecto personal en desarrollo.",
+    "summary": "Una app para quedar a hacer deporte: ves eventos cerca y te apuntas en pocos pasos.",
+    "tags": ["Producto", "Backend", "Tiempo real", "UX"],
+    "status": "En desarrollo",
+    "cta": "Ver caso",
+    "href": "/projects/play2",
+    "featured": true,
+    "labelImage": "/assets/play2-label.svg",
+    "coverImage": "/assets/play2-cover.svg",
+    "cardImage": "/assets/play2-card.svg"
   },
   {
     "slug": "gamemodai",
     "title": "GameModAI",
-    "subtitle": "Pipeline IA para upscaling de assets con orquestación asíncrona",
-    "summary": "FastAPI + Celery + Kaggle GPU para automatizar resultados en ZIP con UX de progreso.",
-    "tags": ["FastAPI", "Celery", "Docker", "Kaggle", "IA aplicada"],
-    "cta": "Ver case study"
+    "subtitle": "Proyecto personal en desarrollo.",
+    "summary": "Subes tus archivos y el sistema los mejora automáticamente para descargar el resultado.",
+    "tags": ["Automatización", "Backend", "Producto", "Escalabilidad"],
+    "status": "En desarrollo",
+    "cta": "Ver caso",
+    "href": "/projects/gamemodai",
+    "featured": false,
+    "coverImage": "/assets/gamemodai-cover.svg",
+    "cardImage": "/assets/gamemodai-card.svg"
+  },
+  {
+    "slug": "deltai",
+    "title": "DeltAI",
+    "subtitle": "Proyecto personal en desarrollo.",
+    "summary": "Convierte requisitos en tareas claras para empezar un proyecto con orden.",
+    "tags": ["MVP", "Producto", "Proceso", "Eficiencia"],
+    "status": "En desarrollo",
+    "cta": "Ver caso",
+    "href": "/projects/deltai",
+    "featured": false,
+    "coverImage": "/assets/deltai-cover.svg",
+    "cardImage": "/assets/deltai-card.svg"
   }
 ]

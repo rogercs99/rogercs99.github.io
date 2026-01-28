@@ -16,9 +16,9 @@ function SectionBlock({ title, children }: { title: string; children: React.Reac
   );
 }
 
-export default function Play2CaseStudy() {
+export default function DeltAICaseStudy() {
   const { caseStudies, site } = loadAllContent();
-  const study = caseStudies.play2;
+  const study = caseStudies.deltai;
   const overviewBlocks = Array.isArray(study.overview) ? study.overview : [study.overview];
 
   return (
@@ -42,9 +42,9 @@ export default function Play2CaseStudy() {
               status={study.status}
               tags={study.tags}
             >
-              <div className="space-y-8 text-sm text-ink-300">
+              <div className="space-y-8 text-sm text-white/80">
               <SectionBlock title="Contexto">
-                <div className="space-y-3">
+                <div className="space-y-3 text-white/80">
                   {overviewBlocks.map((paragraph: string) => (
                     <p key={paragraph}>{paragraph}</p>
                   ))}
@@ -57,7 +57,7 @@ export default function Play2CaseStudy() {
                 </SectionBlock>
 
                 <SectionBlock title="Qué incluye">
-                  <ul className="space-y-2">
+                  <ul className="space-y-2 text-white/80">
                     {study.highlights.map((item: string) => (
                       <li key={item} className="flex gap-2">
                         <span className="mt-1 h-2 w-2 rounded-full bg-ink-200" aria-hidden />
@@ -68,7 +68,7 @@ export default function Play2CaseStudy() {
                 </SectionBlock>
 
                 <SectionBlock title="Skills que se ven">
-                  <ul className="space-y-2">
+                  <ul className="space-y-2 text-white/80">
                     {study.skillsShown.map((item: string) => (
                       <li key={item} className="flex gap-2">
                         <span className="mt-1 h-2 w-2 rounded-full bg-ink-200" aria-hidden />
@@ -87,7 +87,7 @@ export default function Play2CaseStudy() {
                 </SectionBlock>
 
                 <SectionBlock title="Impacto esperado">
-                  <ul className="space-y-2">
+                  <ul className="space-y-2 text-white/80">
                     {study.impact.map((item: string) => (
                       <li key={item} className="flex gap-2">
                         <span className="mt-1 h-2 w-2 rounded-full bg-ink-200" aria-hidden />
@@ -99,8 +99,8 @@ export default function Play2CaseStudy() {
 
                 <Card>
                   <h3 className="text-[16px] font-bold text-white">CTA rápido</h3>
-                  <p className="mt-2 text-ink-300">
-                    Si quieres profundizar en decisiones técnicas o en cómo se ha pensado el producto, hablemos.
+                  <p className="mt-2 text-white/80">
+                    Si quieres profundizar en el producto o en cómo lo he planteado, hablemos.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-3">
                     <Link className="btn-shadow-soft" to="/projects">VOLVER A PROYECTOS</Link>

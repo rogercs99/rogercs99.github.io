@@ -1,0 +1,31 @@
+<svg width="920" height="560" viewBox="0 0 920 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f151b"/>
+      <stop offset="100%" stop-color="#1d2126"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f1c24"/>
+      <stop offset="100%" stop-color="#0c141b"/>
+    </linearGradient>
+  </defs>
+  <rect width="920" height="560" rx="32" fill="url(#bg)"/>
+  <rect x="28" y="28" width="864" height="504" rx="28" fill="#1a1a1a"/>
+  <rect x="60" y="60" width="320" height="440" rx="26" fill="url(#panel)" stroke="#facdcd" stroke-width="2"/>
+  <rect x="400" y="90" width="460" height="130" rx="20" fill="#18212a"/>
+  <rect x="400" y="240" width="460" height="240" rx="20" fill="#121a22"/>
+  <circle cx="170" cy="200" r="14" fill="#fa4777"/>
+  <circle cx="245" cy="280" r="10" fill="#facdcd"/>
+  <circle cx="150" cy="350" r="8" fill="#ffffff"/>
+  <path d="M130 240L215 220L275 290L205 370" stroke="#facdcd" stroke-width="2" fill="none"/>
+  <path d="M420 135H820" stroke="#2e2e2e" stroke-width="12" stroke-linecap="round"/>
+  <path d="M420 165H760" stroke="#2e2e2e" stroke-width="12" stroke-linecap="round"/>
+  <path d="M420 285H820" stroke="#2e2e2e" stroke-width="12" stroke-linecap="round"/>
+  <path d="M420 323H760" stroke="#2e2e2e" stroke-width="12" stroke-linecap="round"/>
+  <path d="M420 361H700" stroke="#2e2e2e" stroke-width="12" stroke-linecap="round"/>
+  <rect x="440" y="400" width="180" height="46" rx="23" fill="#facdcd"/>
+  <text x="468" y="429" fill="#1a1a1a" font-family="Arial Black, Arial, sans-serif" font-size="14" letter-spacing="2">MAPA</text>
+  <text x="70" y="52" fill="#facdcd" font-family="Arial Black, Arial, sans-serif" font-size="16" letter-spacing="4">PLAY2 / MAP</text>
+  <text x="420" y="110" fill="#facdcd" font-family="Arial Black, Arial, sans-serif" font-size="12" letter-spacing="2">EVENTOS CERCA</text>
+  <text x="420" y="265" fill="#8a8f96" font-family="Arial, sans-serif" font-size="12" letter-spacing="1">LISTA + FILTROS</text>
+</svg>
