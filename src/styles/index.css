@@ -8,8 +8,9 @@
   }
 
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Helvetica, Arial,
-      "Segoe UI", system-ui, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, system-ui, sans-serif;
+    letter-spacing: -0.01em;
+    text-rendering: optimizeLegibility;
     background-color: #1a1a1a;
     color: #ffffff;
   }
