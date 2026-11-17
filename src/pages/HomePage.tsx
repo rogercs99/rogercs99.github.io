@@ -6,6 +6,7 @@ import { Nav } from '../components/Nav';
 import { Footer } from '../components/Footer';
 import { Badge } from '../components/Badge';
 import { ScrollReveal } from '../components/ScrollReveal';
+import { ProjectInquiry } from '../components/ProjectInquiry';
 
 export default function HomePage() {
   const { site, projects, experience, skills, ai, leadership, caseStudies } = loadAllContent();
@@ -123,6 +124,8 @@ export default function HomePage() {
           </svg>
         </div>
       </section>
+
+      <ProjectInquiry recipient={site.email} />
 
       <section className="bg-ink-100 py-16 text-black md:py-[85px]">
         <ScrollReveal className="wrap grid gap-12 lg:grid-cols-[3fr_2fr]">
